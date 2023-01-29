@@ -1,0 +1,33 @@
+{
+  "name": "easychat",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "start": "adalo dev",
+    "adalo-login": "adalo login",
+    "publish": "adalo publish",
+    "lint": "eslint src --max-warnings=0 --ext .js"
+  },
+  "devDependencies": {
+    "@adalo/cli": "^0.0.55",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.1.1",
+    "react": "^16.9.0",
+    "react-art": "^16.6.0",
+    "react-dom": "^16.9.0",
+    "react-native-web": "^0.9.5"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "react-native-autogrow-textinput": "^5.4.0",
+    "yarn": "^1.22.19"
+  }
+}

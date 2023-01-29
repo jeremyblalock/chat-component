@@ -1,0 +1,12 @@
+{
+  "displayName": "EasyChat",
+  "components": [
+    {
+      "name": "EasyChat",
+      "manifest": "./src/components/EasyChat/manifest.json"
+    }
+  ],
+  "author": "",
+  "description": "",
+  "logo": "./example-logo.png"
+}

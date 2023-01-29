@@ -1,0 +1,73 @@
+{
+  "extends": ["airbnb-base", "plugin:prettier/recommended", "plugin:react/recommended", "plugin:import/recommended"],
+  "env": {
+    "es2021": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "always", "prev": "*", "next": ["multiline-block-like", "multiline-expression", "multiline-const", "multiline-let"] },
+      { "blankLine": "always", "next": "*", "prev": ["multiline-block-like", "multiline-expression", "multiline-const", "multiline-let"] },
+      { "blankLine": "always", "prev": "*", "next": ["return"] },
+      { "blankLine": "any", "prev": "case", "next": "case" }
+    ],
+    "curly": ["error", "multi-line"],
+
+    "import/no-commonjs": "error",
+
+    "no-cond-assign": "off",
+    "prefer-const": "off",
+    "no-shadow": "off",
+    "no-console": ["error", {"allow": ["warn", "error", "info"]}],
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "no-useless-escape": "off",
+    "no-restricted-syntax": "off",
+    "no-else-return": "off",
+    "prefer-destructuring": "off",
+    "spaced-comment": "off",
+    "consistent-return": "off",
+    "default-case": "off",
+    "no-return-assign": "off",
+    "no-continue": "off",
+    "radix": "off",
+    "no-loop-func": "off",
+    "array-callback-return": "off",
+    "no-throw-literal": "off",
+    "operator-assignment": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "no-lonely-if": "off",
+    "no-await-in-loop": "off",
+    "no-nested-ternary": "off",
+    "guard-for-in": "off",
+    "class-methods-use-this": "off",
+    "max-classes-per-file": "off",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off"
+  },
+  "settings": {
+    "import/core-modules": ["react", "react-native"]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "displayName": "EasyChat",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "users",
+      "displayName": "Chat Members",
+      "type": "list"
+    },
+    {
+      "name": "name",
+      "displayName": "Name Property",
+      "type": "text",
+      "role": "listItem",
+      "reference": "users"
+    },
+    {
+      "name": "avatar",
+      "displayName": "User Photo Property",
+      "type": "image",
+      "role": "listItem",
+      "reference": "users"
+    },
+    {
+      "name": "currentUserId",
+      "displayName": "Logged In User ID",
+      "type": "number",
+      "helpText": "Select Logged In User's... > ID"
+    }
+  ]
+}
